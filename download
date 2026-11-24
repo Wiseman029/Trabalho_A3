@@ -1,0 +1,3 @@
+# Garante que o Apache repasse o login (Basic Auth) ao PHP em qualquer configuração
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

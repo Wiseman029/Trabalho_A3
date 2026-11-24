@@ -1,0 +1,73 @@
+
+:root{--p:#7C3AED;--s:#14B8A6;--d:#111827;--m:#64748B}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--d)}.navbar-brand{font-weight:800}.brand{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--p),var(--s));display:inline-grid;place-items:center;color:#fff;font-weight:900}.btn-primary{background:var(--p);border-color:var(--p)}.btn-primary:hover{background:#5B21B6;border-color:#5B21B6}.btn-outline-primary{color:var(--p);border-color:var(--p)}.btn-outline-primary:hover{background:var(--p);border-color:var(--p)}.hero{background:radial-gradient(circle at 90% 10%,#14B8A633,transparent 30%),radial-gradient(circle at 10% 90%,#7C3AED44,transparent 35%),linear-gradient(135deg,#0f172a,#1e1b4b);color:#fff}.hero-art{max-height:380px;width:100%}.section-title{font-weight:800}.section-subtitle{color:var(--m);max-width:720px}.cardx{border:1px solid #e2e8f0;border-radius:18px;overflow:hidden;height:100%;transition:.2s}.cardx:hover{transform:translateY(-4px);box-shadow:0 16px 40px #0f172a18}.service-img,.blog-img{height:190px;object-fit:cover;width:100%}.price{font-size:1.35rem;font-weight:800;color:var(--p)}.page-header{background:linear-gradient(135deg,#f5f3ff,#ecfeff);padding:65px 0 45px}.iconbox{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:#ede9fe;color:var(--p);font-size:1.3rem}.avatar{width:64px;height:64px;border-radius:50%}.map-frame{width:100%;height:360px;border:0;border-radius:18px}.video-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:16px}.whatsapp{position:fixed;right:20px;bottom:20px;z-index:1050;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;text-decoration:none;font-size:1.4rem;box-shadow:0 10px 25px #0003}footer{background:#0f172a;color:#cbd5e1}footer a{color:#e2e8f0;text-decoration:none}@media(max-width:768px){.hero h1{font-size:2.2rem}.service-img,.blog-img{height:165px}.page-header{padding:48px 0 32px}}
+
+.logo-img{width:42px;height:42px;object-fit:cover;border-radius:10px}.team-photo{width:100%;height:300px;object-fit:cover;object-position:center 20%}.hero .hero-art{object-fit:cover;border-radius:22px}.hero .hero-logo{object-fit:contain;background:transparent;border-radius:0;max-height:380px}
+
+/* ===== CABEÇALHO — fiel à referência enviada ===== */
+/* ===== CABEÇALHO — identidade ChapeCode ===== */
+.main-navbar{
+  background:linear-gradient(100deg,#0d122b 0%,#101735 55%,#111a3d 100%)!important;
+  min-height:84px;
+  padding:0;
+  border:0;
+  border-bottom:1px solid rgba(94,234,212,.10);
+  box-shadow:0 8px 24px rgba(3,7,18,.16);
+}
+.main-navbar .container{max-width:1360px;min-height:84px}
+.header-brand{height:84px;flex-shrink:0;display:flex;align-items:center}
+.header-logo-link{height:84px;width:300px;display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.header-logo-image{display:block;width:292px;height:80px;object-fit:contain;object-position:left center}
+.header-divider{height:38px;width:1px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.5),transparent);margin:0 22px 0 0}
+.header-tagline{font-size:11px;line-height:1.35;color:rgba(255,255,255,.9);white-space:nowrap;width:112px;font-weight:500}
+.main-navbar .navbar-nav{gap:4px}
+.main-navbar .nav-link{color:#fff!important;font-size:12px;font-weight:700;padding:11px 14px!important;border-radius:8px;white-space:nowrap;transition:background .2s ease,color .2s ease,transform .2s ease}
+.main-navbar .nav-link:hover{background:rgba(124,58,237,.18);color:#5eead4!important}
+.main-navbar .nav-link.active{background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff!important;box-shadow:0 5px 16px rgba(124,58,237,.25)}
+.main-navbar .nav-toggler-custom{border:1px solid rgba(94,234,212,.45);background:rgba(255,255,255,.03);border-radius:9px;padding:7px 10px}
+.main-navbar .nav-toggler-custom i{color:#5eead4;font-size:20px}
+.header-whatsapp{width:40px;height:40px;border:2px solid #00d7c2;border-radius:50%;display:inline-grid;place-items:center;color:#00d7c2!important;font-size:19px;margin-left:8px;text-decoration:none;transition:.2s ease}
+.header-whatsapp:hover{background:#00d7c2;color:#071522!important;transform:translateY(-1px)}
+.header-budget{border:2px solid #00d7c2;color:#00d7c2!important;border-radius:22px;padding:9px 21px!important;font-size:12px;font-weight:700;text-decoration:none;margin-left:6px;white-space:nowrap;transition:.2s ease}
+.header-budget:hover{background:#00d7c2;color:#071522!important;box-shadow:0 5px 16px rgba(0,215,194,.2)}
+@media (max-width:991.98px){
+  .header-logo-link{width:245px}
+  .header-logo-image{width:238px;height:76px}
+  .header-divider,.header-tagline{display:none}
+}
+@media (max-width:576px){
+  .main-navbar,.main-navbar .container,.header-brand,.header-logo-link{min-height:74px;height:74px}
+  .header-logo-link{width:215px}
+  .header-logo-image{width:210px;height:68px}
+}
+/* Carrossel: somente na home, usando as imagens existentes */
+.home-carousel{height:360px;background:#0f172a;border-radius:18px;overflow:hidden}
+.home-carousel .carousel-inner,.home-carousel .carousel-item{height:100%}
+.home-carousel .carousel-item img{height:100%;width:100%;object-fit:contain;object-position:center;background:#0f172a;padding:10px 24px}
+/* ===== RODAPÉ — paleta da referência: roxo + azul + teal ===== */
+footer{position:relative;background:linear-gradient(105deg,#7436e9 0%,#5b3fe8 34%,#16a9d1 68%,#14b8a6 100%);color:#fff!important;border:0;overflow:hidden;padding-top:72px!important}
+footer:before{content:"";position:absolute;top:-30px;left:-3%;width:106%;height:58px;background:#f8fafc;transform:rotate(-1.2deg);transform-origin:center;clip-path:polygon(0 0,100% 0,100% 48%,80% 35%,62% 62%,43% 46%,22% 67%,0 47%)}
+footer:after{content:"";position:absolute;left:0;right:0;bottom:0;height:7px;background:linear-gradient(90deg,#7c3aed,#14b8a6)}
+footer .container{position:relative;z-index:1}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{color:#d9fffb}
+footer .text-white{color:#fff!important}
+footer .border-secondary{border-color:rgba(255,255,255,.45)!important}
+footer p,footer small{color:rgba(255,255,255,.9)!important}
+@media(max-width:1250px){.main-navbar .container{max-width:1160px}.header-logo-link{width:285px}.header-mark{width:66px;background-size:200px 200px;background-position:-65px -11px}.header-wordmark{width:195px;background-size:340px 340px;background-position:-58px -149px}.header-divider{margin-right:18px}.header-tagline{font-size:10px;width:95px}.main-navbar .nav-link{padding-left:10px!important;padding-right:10px!important}.main-navbar .navbar-nav{gap:2px}}
+@media(max-width:991.98px){.main-navbar,.main-navbar .container{min-height:74px}.header-brand{height:74px}.header-logo-link{height:74px;width:275px}.header-mark{width:62px;height:62px;background-size:185px 185px;background-position:-60px -10px}.header-wordmark{width:190px;height:62px;background-size:330px 330px;background-position:-56px -144px}.header-divider,.header-tagline{display:none}.main-navbar .navbar-collapse{background:#10152f;padding:12px 0 14px}.main-navbar .navbar-nav{gap:2px}.header-budget{display:inline-block;margin:7px 0 0}.header-whatsapp{margin:7px 0 0}.home-carousel{height:330px}}
+@media(max-width:575.98px){.main-navbar,.main-navbar .container{min-height:68px}.header-brand{height:68px}.header-logo-link{height:68px;width:225px}.header-mark{width:55px;height:55px;background-size:160px 160px;background-position:-52px -9px}.header-wordmark{width:165px;height:56px;background-size:285px 285px;background-position:-48px -124px}.home-carousel{height:260px}.home-carousel .carousel-item img{padding:8px 12px}footer{padding-top:60px!important}}
+
+
+/* Currículos completos dos profissionais, conforme Anexo 1 */
+.curriculum-item{line-height:1.55}
+.curriculum-item h5{color:#1f2937}
+.curriculum-item p{color:#374151}
+.curriculum-item .text-secondary{color:#6b7280!important}
+
+/* A solicitação de orçamento não exibe fotos dos profissionais. */
+.modal .team-photo,.modal img{display:none!important;}
+
+
+.professionals-box{height:100%;padding:1.25rem;border:1px solid rgba(124,58,237,.12);border-radius:1rem;background:#fff;box-shadow:0 .35rem 1rem rgba(16,21,47,.06)}
+.professional-photo{width:100%;height:230px;object-fit:cover;display:block}
+@media (max-width:576px){.professional-photo{height:180px}}
